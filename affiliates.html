@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Affiliates — Sneaks · Halfmoon</title>
+<meta name="description" content="Tools and platforms Halfmoon runs on. Affiliate links — signing up through one may earn a commission at no extra cost to you.">
+<style>
+  :root{
+    --bg:#0a0a0b; --panel:#121214; --panel2:#17171a; --line:#26262b;
+    --ink:#f2f0eb; --dim:#a3a099; --faint:#6d6a63;
+    --live:#3ddc84; --building:#ffb224; --staged:#8ab4ff;
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;line-height:1.5}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* split seam — the brand motif: hard black/white split, no blend */
+  .seam{height:6px;background:linear-gradient(90deg,#000 0 50%,#f2f0eb 50% 100%)}
+  .seam.thin{height:2px;opacity:.9}
+
+  header.site{display:flex;justify-content:space-between;align-items:center;
+    padding:20px 0;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.14em;font-size:14px}
+  nav.top{display:flex;gap:22px;font-size:13px;letter-spacing:.08em}
+  nav.top a{color:var(--dim);text-decoration:none;text-transform:uppercase;font-weight:600}
+  nav.top a:hover{color:var(--ink)}
+  nav.top a.here{color:var(--ink)}
+
+  .hero{padding:84px 0 64px}
+  .kicker{font-size:12px;letter-spacing:.28em;color:var(--dim);text-transform:uppercase;font-weight:700;margin-bottom:22px}
+  .kicker b{color:var(--ink)}
+  h1{font-size:clamp(52px,9vw,96px);line-height:.92;font-weight:900;letter-spacing:-.01em;text-transform:uppercase}
+  .lede{margin-top:26px;font-size:clamp(19px,2.4vw,24px);line-height:1.45;color:var(--ink);max-width:44ch;font-weight:600}
+  .sub{margin-top:14px;font-size:16px;color:var(--dim);max-width:62ch}
+
+  section{padding:56px 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:28px}
+  .sec-head h2{font-size:15px;letter-spacing:.3em;text-transform:uppercase;font-weight:800}
+  .sec-head .rule{flex:1;border-top:1px solid var(--line);transform:translateY(-4px)}
+  .sec-head span{font-size:13px;color:var(--faint)}
+
+  .chip{font-size:11px;font-weight:800;letter-spacing:.16em;padding:5px 11px;border-radius:999px;
+    border:1px solid var(--line);text-transform:uppercase;white-space:nowrap}
+  .chip.live{color:var(--live);border-color:rgba(61,220,132,.4)}
+  .chip.building{color:var(--building);border-color:rgba(255,178,36,.4)}
+  .chip.staged{color:var(--staged);border-color:rgba(138,180,255,.4)}
+  .chip.partner{color:var(--ink);border-color:#4a4a52}
+
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px;display:flex;flex-direction:column;gap:12px;min-height:196px}
+  .card:hover{background:var(--panel2)}
+  .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .card h3{font-size:23px;font-weight:850;letter-spacing:-.01em}
+  .card p{color:var(--dim);font-size:15.5px;line-height:1.55;flex:1}
+  .card a.go{font-size:14px;font-weight:700;text-decoration:none;border-bottom:2px solid var(--ink);padding-bottom:2px;align-self:flex-start}
+  .card a.go:hover{opacity:.8}
+
+  .note{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 28px}
+  .note p{color:var(--dim);font-size:15.5px;line-height:1.6}
+  .note b{color:var(--ink)}
+
+  footer.site{border-top:1px solid var(--line);padding:34px 0 44px;margin-top:24px}
+  .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--faint);font-size:13.5px}
+  .foot b{color:var(--dim)}
+
+  @media (max-width:760px){
+    .hero{padding:56px 0 44px}
+    .cards{grid-template-columns:1fr}
+    nav.top{gap:14px}
+    section{padding:40px 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="seam"></div>
+
+<div class="wrap">
+  <header class="site">
+    <div class="brand">SNEAKS</div>
+    <nav class="top">
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="affiliates.html" class="here">Affiliates</a>
+      <a href="index.html#links">Links</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="kicker">Partners · <b>The stack behind Halfmoon</b></div>
+    <h1>Affiliates</h1>
+    <p class="lede">Tools and platforms the studio actually runs on — swaps, bots, hosting, and the channels we publish through.</p>
+    <p class="sub">Every link on this page is an affiliate link. If you sign up through one, Halfmoon may earn a commission at no extra cost to you. Nothing here is listed that we don't use, build on, or hold an active partner account with.</p>
+  </div>
+
+  <section id="partners">
+    <div class="sec-head"><h2>Partner links</h2><div class="rule"></div><span>Live accounts · verified</span></div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top"><h3>ChangeNOW</h3><span class="chip partner">Swaps</span></div>
+        <p>Instant crypto-to-crypto swaps without handing over custody. The exchange rail we point people at when a launch or a trade needs a fast conversion.</p>
+        <a class="go" href="https://changenow.app.link/referral?link_id=b4f1b92cf2040d" target="_blank" rel="noopener sponsored">Swap on ChangeNOW &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>CypherGoat</h3><span class="chip partner">Swaps</span></div>
+        <p>A swap aggregator that routes across exchanges to find the best rate on a trade, instead of taking whatever one venue gives you.</p>
+        <a class="go" href="https://cyphergoat.com/?ref=CG4A0F70C8" target="_blank" rel="noopener sponsored">Trade on CypherGoat &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>WunderTrading</h3><span class="chip partner">Trading bots</span></div>
+        <p>Automated crypto trading bots and copy trading — set the strategy once and let it run. Our referral pays 20% today, with the full affiliate tier in review.</p>
+        <a class="go" href="https://wundertrading.com/en/register?ref=wbtc93bdd6ba730cce5" target="_blank" rel="noopener sponsored">Start on WunderTrading &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>AlgoVesta</h3><span class="chip partner">Signals</span></div>
+        <p>AI-driven trading signals and market readouts. The kind of second opinion the desk checks before it trusts its own.</p>
+        <a class="go" href="https://algovesta.com/register.html?ref=XNQK8F" target="_blank" rel="noopener sponsored">See AlgoVesta &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>PetroSky</h3><span class="chip partner">Hosting</span></div>
+        <p>Cloud and VPS hosting for the always-on parts of the operation — agents, watchers, and services that can't sleep when we do.</p>
+        <a class="go" href="https://client.petrosky.io/aff.php?aff=476" target="_blank" rel="noopener sponsored">Host on PetroSky &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>beehiiv</h3><span class="chip partner">Newsletters</span></div>
+        <p>The newsletter platform behind John's Newsletter. Partners earn 50% for 12 months, and new publishers get a trial plus 20% off through this link.</p>
+        <a class="go" href="https://www.beehiiv.com/?via=john-tedesco" target="_blank" rel="noopener sponsored">Publish on beehiiv &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>Affitor</h3><span class="chip partner">Network</span></div>
+        <p>The partner network profile for Halfmoon Studio, home of the Clozure program — 50% recurring for 12 months, active now.</p>
+        <a class="go" href="https://affitor.com/r/thatdudesneaks" target="_blank" rel="noopener sponsored">Halfmoon on Affitor &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top"><h3>Clozure</h3><span class="chip partner">Sales</span></div>
+        <p>Joined through Affitor and live on the dashboard. Sign up through the studio's link and the program tracks to Halfmoon automatically.</p>
+        <a class="go" href="https://clozure.net/?aff=mQQats9" target="_blank" rel="noopener sponsored">Try Clozure &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="disclosure">
+    <div class="note">
+      <p><b>Disclosure.</b> This page exists to make money for the studio — that's the point of it. Commissions come out of the platforms' side, never added to your price. Programs are reviewed against real use and cut when they stop earning or stop deserving the slot.</p>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="foot">
+      <span><b>Sneaks</b> · New York</span>
+      <span>Built with <b>Muse</b></span>
+    </div>
+  </footer>
+</div>
+
+<div class="seam"></div>
+
+</body>
+</html>
